@@ -1,0 +1,59 @@
+﻿<h3>ChildComponent</h3>
+
+@code {
+
+
+    // The result from Devtool on browser
+ //Parent- SetParametersAsycn : 2023-09-13:12:32:06.652
+// Parent- OnInitialized : 2023-09-13:12:32:06.722
+// Parent- OnParametersSet : 2023-09-13:12:32:06.723
+        // Child- SetParametersAsycn : 2023-09-13:12:32:06.745
+        // Child- OnInitialized : 2023-09-13:12:32:06.745
+        // Child- OnParametersSet : 2023-09-13:12:32:06.745
+// Parent- OnAfterRender : 2023-09-13:12:32:06.787
+        // Child- OnAfterRender : 2023-09-13:12:32:06.787
+
+
+
+    public override Task SetParametersAsync(ParameterView parameters)
+    {
+        Console.WriteLine($"Child- SetParametersAsycn : {DateTime.Now.ToString("yyyy-MM-dd:hh:mm:ss.fff")}");
+        return base.SetParametersAsync(parameters);
+    }
+
+
+    protected override void OnInitialized()
+    {
+        Console.WriteLine($"Child- OnInitialized : {DateTime.Now.ToString("yyyy-MM-dd:hh:mm:ss.fff")}");
+
+        base.OnInitialized();
+    }
+
+
+    protected override void OnParametersSet()
+    {
+        Console.WriteLine($"Child- OnParametersSet : {DateTime.Now.ToString("yyyy-MM-dd:hh:mm:ss.fff")}");
+
+        base.OnParametersSet();
+    }
+
+    /////////////////////////////////////
+
+    protected override bool ShouldRender()
+    {
+        Console.WriteLine($"Child- ShouldRender : {DateTime.Now.ToString("yyyy-MM-dd:hh:mm:ss.fff")}");
+
+        return base.ShouldRender();
+    }
+
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        Console.WriteLine($"Child- OnAfterRender : {DateTime.Now.ToString("yyyy-MM-dd:hh:mm:ss.fff")}");
+
+        base.OnAfterRender(firstRender);
+    }
+
+
+
+}

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LifecycelEvents", "LifecycelEvents\LifecycelEvents.csproj", "{C140D22D-96B1-4163-8CAE-2293FD69D343}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventLifecycleServer", "EventLifecycleServer\EventLifecycleServer.csproj", "{33B3EECB-640C-4C7F-AEE3-45E2255C0FA4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C140D22D-96B1-4163-8CAE-2293FD69D343}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C140D22D-96B1-4163-8CAE-2293FD69D343}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C140D22D-96B1-4163-8CAE-2293FD69D343}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C140D22D-96B1-4163-8CAE-2293FD69D343}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33B3EECB-640C-4C7F-AEE3-45E2255C0FA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33B3EECB-640C-4C7F-AEE3-45E2255C0FA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33B3EECB-640C-4C7F-AEE3-45E2255C0FA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33B3EECB-640C-4C7F-AEE3-45E2255C0FA4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {02193EA1-A0B4-4423-B9AE-9AE0601C9E08}
+	EndGlobalSection
+EndGlobal

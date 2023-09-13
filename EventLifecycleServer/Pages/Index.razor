@@ -1,0 +1,64 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+<ChildComponent></ChildComponent>
+
+
+@code {
+
+    // the sequance is like this:
+        // parent - SetParameters
+        // parent - OnInitialized
+        // parent - OnParametersSet
+                    // Child - SetParameters
+                    // Child - OnInitialized
+                    // Child _ OnParametersSet
+
+    // parent - SetParameters
+    // parent - OnInitialized
+    // parent - OnParametersSet
+                    // Child - SetParameters
+                    // Child - OnInitialized
+                    // Child _ OnParametersSet
+
+
+    // Parent - OnAfterRender
+                // Childe - OnAfterRender
+
+    public override Task SetParametersAsync(ParameterView parameters)
+    {
+        return base.SetParametersAsync(parameters);
+    }
+
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+    }
+
+
+    protected override void OnParametersSet()
+    {
+        base.OnParametersSet();
+    }
+
+    /////////////////////////////////////
+
+    protected override bool ShouldRender()
+    {
+        return base.ShouldRender();
+    }
+
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        base.OnAfterRender(firstRender);
+    }
+}
