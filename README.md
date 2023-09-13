@@ -1,7 +1,8 @@
 # LifecycelEvents
 lifecycle events in both server side and client side and the differences
 
-in Server Side the event cycle for parant and child component look like:  // the sequance is like this:
+//In Server Side the event cycle for parant and child component look like:  
+// the sequance is like this:
         // parent - SetParameters
         // parent - OnInitialized
         // parent - OnParametersSet
